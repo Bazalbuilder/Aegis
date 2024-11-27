@@ -2,8 +2,8 @@ name: Aegis Bug Report
 description: File a bug report.
 title: "[Bug]: "
 labels: "bug"
-projects: ''
-assignees:
+projects: ""
+assignees: ""
 body:
   - type: markdown
     attributes:
