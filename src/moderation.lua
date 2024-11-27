@@ -1,4 +1,7 @@
 --!strict
+--[[
+	TEMPORARY. Will be changed soon.
+]]
 
 local ModerationStatus = {}
 ModerationStatus.__index = ModerationStatus
