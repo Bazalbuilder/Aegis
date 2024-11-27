@@ -22,13 +22,13 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: terms
+    id: create-pr
     attributes:
       label: Create a Pull Request if Accepted
-      description: Do you want to create a pull request if this feature has been accepted?
+      description: Do you want to create a pull request if this feature is been accepted?
       options:
         - label: Yes, I want to create a pull request.
-        required: true
+          required: true
   - type: checkboxes
     id: terms
     attributes:
