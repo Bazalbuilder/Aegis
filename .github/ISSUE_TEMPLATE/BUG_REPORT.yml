@@ -1,0 +1,43 @@
+name: Aegis Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: "bug"
+projects: ''
+assignees:
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Expected Outcome
+      description: What is your issue, and what was the expected outcome?
+      placeholder: Enter description of expected outcome here.
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of Aegis are you using?
+      options:
+        - v0.1.0
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Contribution Guidelines
+      description: By submitting this issue, you agree to follow our [Contribution Guidelines](CONTRIBUTING.md).
+      options:
+        - label: I agree to follow this project's Contribution Guidelines.
+          required: true
