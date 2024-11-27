@@ -28,7 +28,7 @@ body:
       description: Do you want to create a pull request if this feature is been accepted?
       options:
         - label: Yes, I want to create a pull request.
-          required: true
+          required: false
   - type: checkboxes
     id: terms
     attributes:
