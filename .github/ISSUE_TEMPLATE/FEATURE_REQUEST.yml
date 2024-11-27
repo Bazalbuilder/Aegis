@@ -32,8 +32,8 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: Contribution Guidelines
-      description: By submitting this issue, you agree to follow our [Contribution Guidelines](CONTRIBUTING.md).
+      label: Agreement
+      description: By submitting this issue, you agree to follow our [Contribution Guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md).
       options:
-        - label: I agree to follow this project's Contribution Guidelines.
+        - label: I agree to follow this project's Contribution Guidelines and Code of Conduct..
           required: true
