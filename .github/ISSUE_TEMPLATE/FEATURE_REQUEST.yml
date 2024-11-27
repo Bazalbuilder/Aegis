@@ -1,0 +1,39 @@
+name: Aegis Feature Request
+description: Request a feature to be made to the repository.
+title: "[Request]: "
+labels: "enhancement"
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Expected Outcome
+      description: What do you want to suggest to the repository?
+      placeholder: Enter description of expected outcome here.
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of Aegis are you using?
+      options:
+        - v0.1.0
+      default: 0
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Create a Pull Request if Accepted
+      description: Do you want to create a pull request if this feature has been accepted?
+      options:
+        - label: Yes, I want to create a pull request.
+        required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Contribution Guidelines
+      description: By submitting this issue, you agree to follow our [Contribution Guidelines](CONTRIBUTING.md).
+      options:
+        - label: I agree to follow this project's Contribution Guidelines.
+          required: true
