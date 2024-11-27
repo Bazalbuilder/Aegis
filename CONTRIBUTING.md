@@ -1,4 +1,4 @@
-# Contributing to Aegis, 1st Edition
+# Contributing to Aegis
 If you want to help with Aegis' development, here's a few tips and guidelines to make contributing a piece of cake.
 
 ## Bug Reports
@@ -20,12 +20,10 @@ There is currently no documentation for Aegis. If you wish to help with setting 
 Before starting a pull request, open a feature request or a bug. This helps us prevent duplicated and wasted effort.
 
 Before you submit a pull request, check:
-* Code Style: Make sure your code to ensure it follows the [official Roblox Lua style guide](https://roblox.github.io/lua-style-guide).
-* Linting: There should be no warnings. If you are skeptical if your code has any warnings, put '--1strict' at the top of your code to enable type checking.
+* Code Style: Double check your code by using [StyLua](https://github.com/JohnnyMorganz/StyLua) to ensure it follows the [official Roblox Lua style guide](https://roblox.github.io/lua-style-guide).
+* Linting: You can use [Selene](https://github.com/kampfkarren/selene) on your code to check for any warnings; there should not be any. 
 * Tests: Make sure your code is tested with no failures.
-* Changelog: Don't forget to add an entry to [CHANGELOG.md](CHANGELOG.md).
-
-If you want to fork this repository, be my guest. Just make sure to credit me (Bazalbuilder) when forking, and make sure that your fork is also licensed under MIT.
+* Changelog: Don't forget to add an entry to [CHANGELOG.md](CHANGELOG.md) before submitting a pull request.
 
 ### Code Style
 Roblox has an official Lua style guide, which you can find [here](https://roblox.github.io/lua-style-guide), which should be the general guidelines for all new code. Developers should also follow this when modifying code.

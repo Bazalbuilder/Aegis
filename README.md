@@ -8,12 +8,12 @@ A scripting library that has many features for anticheat and moderation.
 ### Option 1: Downloading a source build
 * TODO: add something to this soon.
 
-This option is not recommended, as you need to manually built it yourself. It would also be considered an unstable build, so you may not get support if you create a new issue.
+This option is not recommended, as you need to manually build the source code yourself. It would also be considered an unstable build, so you may not get support.
 
 ### Option 2: Downloading a pre-compiled build
 * Navigate to the "Releases" tab on the right side of the page and click the latest release build.
 * On the assets dropdown menu, click on the .rbxm file. This will prompt a download.
-* Place the .rbxm file in ReplicatedStorage.
+* Place the .rbxm file in your Studio instance.
 
 This is the best option to utilize Aegis, as it is already pre-compiled, and it would be stable.
 
