@@ -1,7 +1,7 @@
-# Aegis
-A collection of security utilities for exploit detection and experience moderation. Created for the Roblox platform.
+# Aegis (Aegis Security)
+A scripting library that has many features for anticheat and moderation.
 
-**This repository is in development. Not all changes are final.**
+**This repository is in development and is therefore a Work-in-Progress. Not all changes are final.**
 
 ## Installation
 
@@ -17,7 +17,7 @@ This option is not recommended, as you need to manually built it yourself. It wo
 
 This is the best option to utilize Aegis, as it is already pre-compiled, and it would be stable.
 
-## Licensing Guidelines
+## Licensing
 This project is licensed under [MIT](http://opensource.org/licenses/MIT). See [LICENSE](LICENSE) for more details.
 
 Any forks of this repository should also be licensed under MIT.
