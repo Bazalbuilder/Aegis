@@ -8,7 +8,6 @@ Please keep in mind when submitting a security report:
 
 * We do not offer support for forks of Aegis.
 
-1
 | Version | Supported          |
 | ------- | ------------------ |
 | 0.1.x   | :white_check_mark: |

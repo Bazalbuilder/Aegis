@@ -2,16 +2,16 @@
 If you want to help with Aegis' development, here's a few tips and guidelines to make contributing a piece of cake.
 
 ## Bug Reports
-Any bugs (or things that look like bugs) should be reported on the [Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues) so we can fix these issues.
+Any bugs (or things that look like bugs) should be reported to the [Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues) so we can fix these issues.
 
-When posting an issue, make sure to double check to see if that issue has been posted already by another person. If it is, don't worry; if we notice a duplicate issue, we'll send you the original issue's link.
+When posting an issue, make sure to double-check to see if another person has already posted that issue. If it is, don't worry; if we notice a duplicate issue, we'll send you the original issue's link.
 
 ## Feature Requests
-If there are any feature requests that you think would help with Aegis' development, you can post a request on the the [Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues).
+If there are any feature requests that you think would add a valuable addition, you can post a request on the [Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues).
 
 Just like bug reports, double check to see if there is a duplicate before opening a new feature request.
 
-Do note, I am not the smartest individual out there, so you may have to describe what you want to implement to the repository.
+Please note, I am not the smartest individual out there, so you may have to describe what you want to implement to the repository.
 
 ## Documentation
 There is currently no documentation for Aegis. If you wish to help with setting up documentation, feel free to contact me on [Discord](https://discord.gg/asCWGUfJMj).
@@ -20,20 +20,24 @@ There is currently no documentation for Aegis. If you wish to help with setting 
 Before starting a pull request, open a feature request or a bug. This helps us prevent duplicated and wasted effort.
 
 Before you submit a pull request, check:
-* Code Style: Double check your code by using [StyLua](https://github.com/JohnnyMorganz/StyLua) to ensure it follows the [official Roblox Lua style guide](https://roblox.github.io/lua-style-guide).
-* Linting: You can use [Selene](https://github.com/kampfkarren/selene) on your code to check for any warnings; there should not be any. 
+* Code Style: Double-check your code to ensure it follows the [official Roblox Lua style guide](https://roblox.github.io/lua-style-guide).
+* Linting: You can use [Selene](https://github.com/kampfkarren/selene) on your code to check for any warnings; there should not be any.
 * Tests: Make sure your code is tested with no failures.
 * Changelog: Don't forget to add an entry to [CHANGELOG.md](CHANGELOG.md) before submitting a pull request.
 
+NOTE: Selene is not implemented yet in this repository, so this may not work.
+
 ### Code Style
-Roblox has an official Lua style guide, which you can find [here](https://roblox.github.io/lua-style-guide), which should be the general guidelines for all new code. Developers should also follow this when modifying code.
+Roblox has an official Lua style guide, which you can find [here](https://roblox.github.io/lua-style-guide), which should be the general guidelines for all new code. Contributors should also follow this while modifying existing code.
 
 In short:
 * Tabs for indentation
 * Double quotes
 * One statement per line
 
-Use 'StyLua' (instructions below) to format your code in accordance to the Roblox style guide.
+Use 'StyLua' to format your code in accordance to the Roblox style guide.
+
+NOTE: StyLua is not implemented yet in this repository, so this may not work.
 
 ### Changelog
 Every pull request should include an entry in [CHANGELOG.md](CHANGELOG.md). This should include the pull request number, a short description of the changes, and the author.
