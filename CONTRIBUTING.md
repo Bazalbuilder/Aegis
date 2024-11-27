@@ -1,5 +1,5 @@
-# Contributing to Aegis
-If you want to help with Aegis' development, here's a few tips and guidelines to make contributing a piece of cake.
+# Aegis Contribution Guide
+Thanks for considering contributing to Aegis! This guide details a few tips and guidelines to make contributing a piece of cake.
 
 ## Bug Reports
 Any bugs (or things that look like bugs) should be reported to the [Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues) so we can fix these issues.
@@ -13,6 +13,18 @@ Just like bug reports, double check to see if there is a duplicate before openin
 
 Please note, I am not the smartest individual out there, so you may have to describe what you want to implement to the repository.
 
+## Working on Aegis
+
+To get started working on Aegis, you'll need the following:
+* [Lua 5.1](https://www.lua.org/ftp/)
+* [Selene](https://github.com/kampfkarren/selene)
+* [StyLua](https://github.com/JohnnyMorganz/StyLua)
+* NOTE: This list is not final!
+
+If you are on a Windows machine, then you may have to edit your PATH variables (environmental variables) to include the file directory of both Selene and StyLua (if it is not included).
+
+More information will be added soon.
+
 ## Documentation
 There is currently no documentation for Aegis. If you wish to help with setting up documentation, feel free to contact me on [Discord](https://discord.gg/asCWGUfJMj).
 
@@ -20,12 +32,12 @@ There is currently no documentation for Aegis. If you wish to help with setting 
 Before starting a pull request, open a feature request or a bug. This helps us prevent duplicated and wasted effort.
 
 Before you submit a pull request, check:
-* Code Style: Double-check your code to ensure it follows the [official Roblox Lua style guide](https://roblox.github.io/lua-style-guide).
-* Linting: You can use [Selene](https://github.com/kampfkarren/selene) on your code to check for any warnings; there should not be any.
+* Code Style: Double-check your code while using [StyLua](https://github.com/JohnnyMorganz/StyLua) to ensure it follows the [official Roblox Lua style guide](https://roblox.github.io/lua-style-guide).
+* Linting: You can use [Selene](https://github.com/kampfkarren/selene) on your code to check for any issues; there should not be any warnings.
 * Tests: Make sure your code is tested with no failures.
 * Changelog: Don't forget to add an entry to [CHANGELOG.md](CHANGELOG.md) before submitting a pull request.
 
-NOTE: Selene is not implemented yet in this repository, so this may not work.
+More information on how to use Selene and StyLua are shown below.
 
 ### Code Style
 Roblox has an official Lua style guide, which you can find [here](https://roblox.github.io/lua-style-guide), which should be the general guidelines for all new code. Contributors should also follow this while modifying existing code.
@@ -36,8 +48,6 @@ In short:
 * One statement per line
 
 Use 'StyLua' to format your code in accordance to the Roblox style guide.
-
-NOTE: StyLua is not implemented yet in this repository, so this may not work.
 
 ### Changelog
 Every pull request should include an entry in [CHANGELOG.md](CHANGELOG.md). This should include the pull request number, a short description of the changes, and the author.
