@@ -15,18 +15,28 @@ Please note, I am not the smartest individual out there, so you may have to desc
 
 ## Working on Aegis
 
-To get started working on Aegis, you'll need the following:
+To get started working on Aegis, you'll need the following installed on your device:
 * [Lua 5.1](https://www.lua.org/ftp/)
-* [Selene](https://github.com/kampfkarren/selene)
-* [StyLua](https://github.com/JohnnyMorganz/StyLua)
-* NOTE: This list is not final!
+* [LuaCov](https://github.com/lunarmodules/luacov)
+* [Foreman](https://github.com/Roblox/foreman) ([installation instructions](https://github.com/Roblox/foreman#installation))
+* [Selene](https://github.com/kampfkarren/selene) (install via foreman; `foreman install` or download latest release)
+* [StyLua](https://github.com/JohnnyMorganz/StyLua) (install only once via foreman; `foreman install` or downlaod latest release)
 
-If you are on a Windows machine, then you may have to edit your PATH variables (environmental variables) to include the file directory of both Selene and StyLua (if it is not included).
+If you are on a Windows machine, then you may have to edit your 'PATH' variables (environmental variables) to include the file directory of both Selene and StyLua (if it is not included already).
 
-More information will be added soon.
+To generate a LuaCov coverage report:
+
+```sh
+lua -lluacov bin/spec.lua
+luacov
+```
+
+More information will be added later.
 
 ## Documentation
-There is currently no documentation for Aegis. If you wish to help with setting up documentation, feel free to contact me on [Discord](https://discord.gg/asCWGUfJMj).
+There is currently no documentation for Aegis. 
+
+If you wish to help with setting up documentation, feel free to contact me on [Discord](https://discord.gg/asCWGUfJMj).
 
 ## Pull Requests
 Before starting a pull request, open a feature request or a bug. This helps us prevent duplicated and wasted effort.
@@ -48,6 +58,11 @@ In short:
 * One statement per line
 
 Use 'StyLua' to format your code in accordance to the Roblox style guide.
+
+### Selene and StyLua
+Selene and StyLua are used in this project for static analysis.
+
+Make sure to install Foreman and run `foreman install` first, which will make both Selene and StyLua available for you.
 
 ### Changelog
 Every pull request should include an entry in [CHANGELOG.md](CHANGELOG.md). This should include the pull request number, a short description of the changes, and the author.
