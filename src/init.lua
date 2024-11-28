@@ -1,8 +1,3 @@
---!strict
---[[
-	Packages up all internal modules of Aegis and exposes a public API for them.
-]]
-
 local Aegis = {
 	-- TODO: Set up APIs.
 	

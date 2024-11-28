@@ -26,7 +26,7 @@ banPlayer.__index = banPlayer
 
 function banPlayer.new(player: Player, reason: string, explanation: string, permanent: boolean)
 	local duration = getNextBanDuration(player.UserId)
-	local config: BanConfigType = {
+	local config = {
 		UserIds = { player.UserId },
 		Duration = if permanent then -1 else duration,
 		DisplayReason = reason,
@@ -38,7 +38,7 @@ function banPlayer.new(player: Player, reason: string, explanation: string, perm
 	return config
 end
 
-function banPlayer.execute(config: BanConfigType)
+function banPlayer.execute(config: Instance)
 	return Players:BanAsync(config)
 end
 
