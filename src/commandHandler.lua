@@ -9,7 +9,7 @@ local TextChatService = game:GetService("TextChatService")
 
 local Commands = script.Parent.Commands
 
-assert(TextChatService.ChatVersion == Enum.ChatVersion.TextChatService, "TextChatService is not enabled. Aegis.commandHandler may have some issues.")
+assert(TextChatService.ChatVersion == Enum.ChatVersion.TextChatService, "TextChatService is not enabled. Aegis.commandHandler will not work.")
 
 local commandHandler = {
 	_initialized = false,
@@ -54,10 +54,9 @@ function commandHandler._initialize()
 					commandModule.Execute(player, arguments)
 				end
 			end)
-			
 		end
 	end
-			
+	
 	commandHandler._initialized = true
 end
 

@@ -26,7 +26,7 @@ function playerAction:executeKick(player: Player, message: string)
 	return player:Kick(message or "Kicked by Aegis.")
 end
 
-function playerAction.executeBan(player: Player, permanent: boolean, reason: string?, explanation: string?)
+function playerAction:executeBan(player: Player, permanent: boolean, reason: string?, explanation: string?)
 	local duration = getNextBanDuration(player.UserId)
 	local config = {
 		UserIds = { player.UserId },
