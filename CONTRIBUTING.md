@@ -24,13 +24,6 @@ To get started working on Aegis, you'll need the following installed on your dev
 
 If you are on a Windows machine, then you may have to edit your 'PATH' variables (environmental variables) to include the file directory of both Selene and StyLua (if it is not included already).
 
-To generate a LuaCov coverage report:
-
-```sh
-lua -lluacov bin/spec.lua
-luacov
-```
-
 More information will be added later.
 
 ## Documentation
