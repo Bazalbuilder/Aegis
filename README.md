@@ -6,7 +6,7 @@ A scripting library that has many features for anti-cheat and moderation.
 ## Installation
 
 ### Option 1: Downloading a source build
-* Currently not implemented. This will become available once we implement the [Wally](https://github.com/UpliftGames/wally) a package manager.
+* Currently not implemented. This will become available once we implement a package manager.
 
 ### Option 2: Downloading a pre-packaged build
 * Navigate to the "Releases" tab on the right side of the page and click the latest release build.
