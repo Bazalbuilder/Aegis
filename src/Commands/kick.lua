@@ -5,7 +5,7 @@ return {
 	Args = {},
 	PermissionLevel = 0,
 	Execute = function(player: Player, arguments: { string }): ()
-		local moderatePlayer = require(script.Parent.Parent.moderatePlayer)
+		local moderatePlayer = require(script.Parent.Parent.moderationHandler)
 
 		moderatePlayer:executeKick(player, arguments[1])
 	end

@@ -1,5 +1,5 @@
 --[[ 
-	Used to handle commands in the "src/Commands" directory.
+	Used to handle commands in the "src/CommandModules" directory.
 	
 	To create a new command, follow the instructions in the "template.lua" file.
 ]]
@@ -7,7 +7,7 @@
 local Players = game:GetService("Players")
 local TextChatService = game:GetService("TextChatService")
 
-local Commands = script.Parent.Commands
+local CommandModules = script.Parent.CommandModules
 
 assert(TextChatService.ChatVersion == Enum.ChatVersion.TextChatService, "TextChatService is not enabled. Aegis.commandHandler will not work.")
 
@@ -29,9 +29,9 @@ function commandHandler._initialize()
 	commandFolder.Name = "AegisCommands"
 	commandFolder.Parent = TextChatService
 	
-	-- Create a new TextChatCommand for every command found in the Aegis/Commands folder.
-	for _, command in ipairs(Commands:GetChildren()) do
-		if command:IsA("ModuleScript") then
+	-- Create a new TextChatCommand for every command found in the Aegis/CommandModules folder.
+	for _, command in ipairs(CommandModules:GetChildren()) do
+		if CommandModules:IsA("ModuleScript") then
 			local commandModule = require(command)
 			local textChatCommand = Instance.new("TextChatCommand") 
 			
