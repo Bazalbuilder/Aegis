@@ -6,7 +6,7 @@ A scripting library that has many features for anti-cheat and moderation.
 ## Installation
 
 ### Option 1: Downloading a source build
-* To Be Added. This will become available once we implement [Wally](https://github.com/UpliftGames/wally).
+* Currently not implemented. This will become available once we implement the [Wally](https://github.com/UpliftGames/wally) a package manager.
 
 ### Option 2: Downloading a pre-packaged build
 * Navigate to the "Releases" tab on the right side of the page and click the latest release build.
@@ -14,6 +14,18 @@ A scripting library that has many features for anti-cheat and moderation.
 * Place the .rbxm file in your Studio instance.
 
 This is the best option to utilize Aegis, as it is the most latest and stable build.
+
+## Planned Features
+Aegis is in development, so many features are not present or incomplete. 
+
+Here's a non-exhaustive list of planned features that we plan or implemented to Aegis:
+* Rate limiter
+* Moderation system
+* Command handler
+* Player checker
+* DataStore validator
+* DataStore sanitizer
+* Custom logger
 
 ## Licensing
 This project is licensed under [MIT](http://opensource.org/licenses/MIT). See [LICENSE](LICENSE) for more details.
