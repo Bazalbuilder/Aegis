@@ -6,16 +6,14 @@ A scripting library that has many features for anti-cheat and moderation.
 ## Installation
 
 ### Option 1: Downloading a source build
-* To Be Added. This will become available once we implement [Wally support](https://github.com/UpliftGames/wally).
+* To Be Added. This will become available once we implement [Wally](https://github.com/UpliftGames/wally).
 
-This option is not recommended, as you need to manually build the source code yourself. It would also be considered an unstable build, so you may not get support.
-
-### Option 2: Downloading a pre-compiled build
+### Option 2: Downloading a pre-packaged build
 * Navigate to the "Releases" tab on the right side of the page and click the latest release build.
 * On the "Assets" dropdown menu, click on the .rbxm file. This will prompt a download.
 * Place the .rbxm file in your Studio instance.
 
-This is the best option to utilize Aegis, as it is already pre-compiled, and it would be stable.
+This is the best option to utilize Aegis, as it is the most latest and stable build.
 
 ## Licensing
 This project is licensed under [MIT](http://opensource.org/licenses/MIT). See [LICENSE](LICENSE) for more details.

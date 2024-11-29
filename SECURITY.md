@@ -20,7 +20,6 @@ If the vulnerability is relatively minor and can be discussed in public, please 
 
 Be sure to include the following in your report:
 * When was the vulnerability first discovered;
-* What is the consequence of this vulnerability;
 * How the vulnerability may be utilized against experiences;
 
 If the vulnerability report has been accepted, make sure to provide updates about the vulnerability and if it is still present.

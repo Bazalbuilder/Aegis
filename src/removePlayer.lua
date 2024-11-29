@@ -21,25 +21,32 @@ local function getNextBanDuration(player): number
 	return 0
 end
 
-local banPlayer = {}
-banPlayer.__index = banPlayer
+local playerAction = {}
+function playerAction:executeKick(player: Player, message: string)
+	return player:Kick(message or "Kicked by Aegis.")
+end
 
-function banPlayer.new(player: Player, reason: string, explanation: string, permanent: boolean)
+function playerAction.executeBan(player: Player, permanent: boolean, reason: string?, explanation: string?)
 	local duration = getNextBanDuration(player.UserId)
 	local config = {
 		UserIds = { player.UserId },
 		Duration = if permanent then -1 else duration,
-		DisplayReason = reason,
-		PrivateReason = explanation,
+		DisplayReason = reason or "Banned by Aegis.",
+		PrivateReason = explanation or "No reason specified.",
 		ExcludeAltAccounts = false,
 		ApplyToUniverse = true,
 	}
 
-	return config
-end
-
-function banPlayer.execute(config: Instance)
 	return Players:BanAsync(config)
 end
 
-return banPlayer
+function playerAction:execute(player: Player)
+	local config = {
+		UserIds = { player.UserId },
+		ApplyToUniverse = true,
+	}
+
+	return Players:UnbanAsync(config)
+end
+
+return playerAction

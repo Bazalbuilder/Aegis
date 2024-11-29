@@ -3,16 +3,12 @@ description: File a bug report.
 title: "[Bug]: "
 labels: "bug"
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
   - type: textarea
     id: what-happened
     attributes:
       label: Expected Outcome
       description: What is your issue, and what was the expected outcome?
-      placeholder: Enter description of expected outcome here.
+      placeholder: Enter description here
     validations:
       required: true
   - type: dropdown
