@@ -1,4 +1,6 @@
 local Players = game:GetService("Players")
+local TextChatService = game:GetService("TextChatService")
+
 
 local function getNextBanDuration(player): number
 	local bans = {}
@@ -22,6 +24,22 @@ local function getNextBanDuration(player): number
 end
 
 local playerAction = {}
+function playerAction:executeMute(player: Player)
+	-- Listens for future TextSources
+	TextChatService.DescendantAdded:Connect(function(child)
+		if child:IsA("TextSource") and child.UserId == player.UserId then
+			child.CanSend = false
+		end
+	end)
+	
+	-- Then mute any current TextSources sent by the player
+	for _, child in TextChatService:GetDescendants() do
+		if child:IsA("TextSource") and child.UserId == player.UserId then
+			child.CanSend = false
+		end
+	end
+end
+
 function playerAction:executeKick(player: Player, message: string)
 	return player:Kick(message or "Kicked by Aegis.")
 end
@@ -40,7 +58,7 @@ function playerAction:executeBan(player: Player, permanent: boolean, reason: str
 	return Players:BanAsync(config)
 end
 
-function playerAction:execute(player: Player)
+function playerAction:executeUnban(player: Player)
 	local config = {
 		UserIds = { player.UserId },
 		ApplyToUniverse = true,

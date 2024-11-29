@@ -17,6 +17,7 @@ body:
       label: Version
       description: What version of Aegis are you using?
       options:
+        - nightly
         - v0.1.0
       default: 0
     validations:

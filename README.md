@@ -36,3 +36,6 @@ Any forks of this repository should also be licensed under MIT.
 Contributions are welcome. Just make sure that what you submitted is your work, and that is also licensed under MIT without any terms or conditions.
 
 Take a look at the [contributing guide](CONTRIBUTING.md) for guidelines on how to contribute to Aegis.
+
+## Questions
+Any questions that someone has should be posted on the [Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues) or my [Discord server](https://discord.gg/asCWGUfJMj). Remember, don't be afraid to ask a question!

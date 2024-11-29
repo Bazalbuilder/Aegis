@@ -29,7 +29,6 @@ function commandHandler._initialize()
 	commandFolder.Name = "AegisCommands"
 	commandFolder.Parent = TextChatService
 	
-	-- Create a new TextChatCommand for every command found in the Aegis/CommandModules folder.
 	for _, command in ipairs(CommandModules:GetChildren()) do
 		if CommandModules:IsA("ModuleScript") then
 			local commandModule = require(command)
@@ -51,7 +50,7 @@ function commandHandler._initialize()
 					local cleanMessage = string.gsub(message, "%s+", " ")
 					local words = string.split(cleanMessage, " ")
 					local arguments = table.move(words, 2, #words, 1, {})
-					commandModule.Execute(player, arguments)
+					commandModule.Execute(player, arguments or nil) -- May not work.
 				end
 			end)
 		end
