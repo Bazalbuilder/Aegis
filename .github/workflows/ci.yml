@@ -36,4 +36,3 @@ jobs:
         shell: bash
         run: |
           selene src
-          stylua -c src/
