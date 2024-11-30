@@ -1,70 +1,71 @@
 # Aegis Contribution Guide
-Thanks for considering contributing to Aegis! This guide details a few tips and guidelines to make contributing a piece of cake.
+Thanks for considering contributing Aegis! This document will help you get started with contributing to the Aegis project.
 
 ## Bug Reports
-Any bugs (or things that look like bugs) should be reported to the [Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues) so we can fix these issues.
+Any bugs (or things that look like bugs) should be reported to the [GitHub Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues).
 
-When posting an issue, make sure to double-check to see if another person has already posted that issue. If it is, don't worry; if we notice a duplicate issue, we'll send you the original issue's link.
+Please include as much information as possible, including:
+* The version of Aegis you are using
+* Steps to reproduce the bug
+* Any relevant error messages or output
+* If applicable, a screenshot or video demonstrating the bug
+
+When posting an issue, make sure to double-check that it hasn't already been reported. If one's already posted, don't worry! If we notice a duplicate issue, we'll send you the link to the original issue.
 
 ## Feature Requests
-If there are any feature requests that you think would add a valuable addition, you can post a request on the [Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues).
+Any feature requests or feedback that you think would make a difference should be posted to the [GitHub Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues) or our [[Discord server](https://discord.gg/asCWGUfJMj).
 
-Just like bug reports, double check to see if there is a duplicate before opening a new feature request.
+Please include as much information as possible, including:
+* A clear description of the feature you're requesting
+* Any relevant use cases or examples of how the feature would be used
+* Any existing alternatives or workarounds you've considered
+* If applicable, any relevant references or links to existing documentation or implementations.
 
-Please note, I am not the smartest individual out there, so you may have to describe what you want to implement to the repository.
+Like bug reports, please double-check that the feature you're requesting hasn't already been posted.
 
 ## Working on Aegis
-
-To get started working on Aegis, you'll need the following installed on your device:
+To get started working on Aegis, you'll need the following programs installed on your device:
 * [Lua 5.1](https://www.lua.org/ftp/)
-* [LuaCov](https://github.com/lunarmodules/luacov)
+* [LuaCov](https://keplerproject.github.io/luacov) `luarocks install luacov`, support being added soon
 * [Foreman](https://github.com/Roblox/foreman) ([installation instructions](https://github.com/Roblox/foreman#installation))
 * [Selene](https://github.com/kampfkarren/selene) (install via foreman; `foreman install` or download latest release)
 * [StyLua](https://github.com/JohnnyMorganz/StyLua) (install only once via foreman; `foreman install` or downlaod latest release)
 
-If you are on a Windows machine, then you may have to edit your 'PATH' variables (environmental variables) to include the file directory of both Selene and StyLua (if it is not included already).
+We also recommend installing the following programs, but it is not required:
+* [Visual Studio Code](https://code.visualstudio.com/)
+* [Rojo](https://github.com/rojo-rbx/rojo)
 
-More information will be added later.
+**NOTE:** If you are on a Windows machine, then you may have to edit your `PATH` variables (environmental variables) to include the file directory for the programs listed above, if they aren't listed already.
 
 ## Documentation
-There is currently no documentation for Aegis. 
-
-If you wish to help with setting up documentation, feel free to contact me on [Discord](https://discord.gg/asCWGUfJMj).
+There is currently no documentation at the moment, as most of the features are in development phase.
 
 ## Pull Requests
-Before starting a pull request, open a feature request or a bug. This helps us prevent duplicated and wasted effort.
+Before starting a pull request, open an issue abut the feature or bug. This helps us prevent duplicated and wasted effort. These issues are a great place to ask for help if you run into problems.
 
-Before you submit a pull request, check:
-* Code Style: Double-check your code while using [StyLua](https://github.com/JohnnyMorganz/StyLua) to ensure it follows the [official Roblox Lua style guide](https://roblox.github.io/lua-style-guide).
-* Linting: You can use [Selene](https://github.com/kampfkarren/selene) on your code to check for any issues; there should not be any warnings.
-* Tests: Make sure your code is tested with no failures.
-* Changelog: Don't forget to add an entry to [CHANGELOG.md](CHANGELOG.md) before submitting a pull request.
-
-More information on how to use Selene and StyLua are shown below.
+Before you submit a new pull request, check:
+* Linting: Run `selene src` to check for any issues. No warnings allowed!
+* Formatting: Run `stylua src` to format all code.
+* Tests: All tests need to pass before we can merge your PR to the `main` branch.
+* Update: Make sure that your branch is up-to-date with the `main` branch.
+* Coverage: Code coverage of tests should not decrease.
 
 ### Code Style
 Roblox has an official Lua style guide, which you can find [here](https://roblox.github.io/lua-style-guide), which should be the general guidelines for all new code. Contributors should also follow this while modifying existing code.
 
-In short:
-* Tabs for indentation
-* Double quotes
-* One statement per line
+Use StyLua ("stylua src`) to format your code in accordance to the Roblox Style Guide.
 
-Use 'StyLua' (`stylua -c src`) to format your code in accordance to the Roblox style guide.
+### Linting
+Aegis uses [Selene](https://github.com/kampfkarren/selene) to check for any issues with our code. 
 
-### Selene and StyLua
-Selene and StyLua are used in this project as a linter and formatting tool respectively.
-
-Make sure to install Foreman and run `foreman install` first, which will make both Selene and StyLua available for you.
+Selene is a static code analysis tool that checks for common errors and bad practices in Lua code.
 
 ### Changelog
-Every pull request should include an entry in [CHANGELOG.md](CHANGELOG.md). This should include the pull request number, a short description of the changes, and the author.
+All notable changes to Aegis should be documented in the [CHANGELOG.md](https://github.com/Bazalbuilder/Aegis/blob/main/CHANGELOG.md) file.
 
-Add a line under the "Current master" heading. When we make a new release, we'll move all the entries in the changelog to a new heading, with the version number.
+Add a line under the "Nightly Releases" heading. When we make a new release, all of the bullet points under "Nightly Releasees" will be attached to a new version.
 
-You don't need to link the related GitHub issue in the changelog, as pull requests will also link to them.
-
-### Tests
-When submitting a bug fix, include a test that verifies the broken behavior and that the bug fix does work. This helps us avoid regressions.
+### Testing
+When submitting a bug report, create a test that verifies the broken behavir and that the bug fix works. This helps us avoid regresions!
 
 When submitting a new feature, add tests for all functionality.

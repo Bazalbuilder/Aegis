@@ -1,4 +1,5 @@
 # Aegis (Aegis Security)
+
 A scripting library that has many features for anti-cheat and moderation.
 
 **This repository is in heavy development and is therefore a Work-in-Progress. Not all changes are final.**
@@ -13,7 +14,10 @@ A scripting library that has many features for anti-cheat and moderation.
 * On the "Assets" dropdown menu, click on the .rbxm file. This will prompt a download.
 * Place the .rbxm file in your Studio instance.
 
-This is the best option to utilize Aegis, as it is the most latest and stable build.
+This is the best option to utilize Aegis, as it is the most stable build.
+
+### Option 3: Using Rojo
+* TODO: Write this later.
 
 ## Planned Features
 Aegis is in early development, so many features are not present or incomplete. 
