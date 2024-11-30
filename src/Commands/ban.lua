@@ -8,5 +8,5 @@ return {
 		local moderatePlayer = require(script.Parent.Parent.moderationHandler)
 
 		moderatePlayer:executeBan(player, false, arguments[1])
-	end
+	end,
 }

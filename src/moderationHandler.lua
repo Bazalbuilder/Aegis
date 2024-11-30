@@ -1,7 +1,6 @@
 local Players = game:GetService("Players")
 local TextChatService = game:GetService("TextChatService")
 
-
 local function getNextBanDuration(player): number
 	local bans = {}
 	local banHistoryPages = Players:GetBanHistoryAsync(player)
@@ -31,7 +30,7 @@ function playerAction:executeMute(player: Player)
 			child.CanSend = false
 		end
 	end)
-	
+
 	-- Then mute any current TextSources sent by the player
 	for _, child in TextChatService:GetDescendants() do
 		if child:IsA("TextSource") and child.UserId == player.UserId then

@@ -8,5 +8,5 @@ return {
 		local moderatePlayer = require(script.Parent.Parent.moderationHandler)
 
 		moderatePlayer:executeKick(player, arguments[1])
-	end
+	end,
 }
