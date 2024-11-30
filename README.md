@@ -5,7 +5,7 @@ A scripting library that has many features for anti-cheat and moderation.
 
 ## Installation
 
-### Option 1: Downloading a source build
+### Option 1: Downloading a nightly build
 * Currently not implemented. This will become available once we implement a package manager.
 
 ### Option 2: Downloading a pre-packaged build
@@ -34,11 +34,9 @@ This project is licensed under [MIT](http://opensource.org/licenses/MIT). See [L
 Any forks of this repository should also be licensed under MIT.
 
 ### Contribution
-Contributions are welcome. Just make sure that what you submitted is your work, and that is also licensed under MIT without any terms or conditions.
-
-Take a look at the [contributing guide](CONTRIBUTING.md) for guidelines on how to contribute to Aegis.
+Contributions are welcome. Take a look at the [contribution guide](CONTRIBUTING.md) for guidelines on how to contribute to Aegis.
 
 ## Questions
-Any questions that someone has should be posted on the [Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues) or my [Discord server](https://discord.gg/asCWGUfJMj). 
+Any questions should be posted on the [Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues) or my [Discord server](https://discord.gg/asCWGUfJMj). 
 
 Remember, don't be afraid to ask a question!

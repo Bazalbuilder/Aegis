@@ -1,6 +1,11 @@
-/luacov.*
-/site
+# Roblox files
 /*.rbxlx
 /*.rbxmx
 /*.rbxl
 /*.rbxm
+
+# Analysis artifacts
+sourcemap.json
+
+# OS / Editor files
+.vscode
