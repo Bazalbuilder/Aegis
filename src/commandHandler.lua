@@ -33,7 +33,7 @@ function commandHandler._initialize()
 	commandFolder.Parent = TextChatService
 
 	for _, command in ipairs(CommandModules:GetChildren()) do
-		if CommandModules:IsA("ModuleScript") then
+		if command:IsA("ModuleScript") then
 			local commandModule = require(command)
 			local textChatCommand = Instance.new("TextChatCommand")
 
@@ -53,7 +53,7 @@ function commandHandler._initialize()
 					local cleanMessage = string.gsub(message, "%s+", " ")
 					local words = string.split(cleanMessage, " ")
 					local arguments = table.move(words, 2, #words, 1, {})
-					commandModule.Execute(player, arguments or nil) -- May not work.
+					commandModule.Execute(player, arguments) -- May not work.
 				end
 			end)
 		end

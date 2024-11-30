@@ -1,7 +1,7 @@
 local Players = game:GetService("Players")
 local TextChatService = game:GetService("TextChatService")
 
-local function getNextBanDuration(player): number
+local function getNextBanDuration(player: number): number
 	local bans = {}
 	local banHistoryPages = Players:GetBanHistoryAsync(player)
 

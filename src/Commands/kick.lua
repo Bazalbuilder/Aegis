@@ -4,9 +4,9 @@ return {
 	Description = "Ejects a player from the server.",
 	Args = {},
 	PermissionLevel = 0,
-	Execute = function(player: Player, arguments: { string }): ()
+	Execute = function(player: Player, ...): ()
 		local moderatePlayer = require(script.Parent.Parent.moderationHandler)
 
-		moderatePlayer:executeKick(player, arguments[1])
+		moderatePlayer:executeKick(player, ...)
 	end,
 }

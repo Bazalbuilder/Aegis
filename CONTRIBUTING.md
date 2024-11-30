@@ -50,10 +50,10 @@ In short:
 * Double quotes
 * One statement per line
 
-Use 'StyLua' to format your code in accordance to the Roblox style guide.
+Use 'StyLua' (`stylua -c src`) to format your code in accordance to the Roblox style guide.
 
 ### Selene and StyLua
-Selene and StyLua are used in this project for static analysis.
+Selene and StyLua are used in this project as a linter and formatting tool respectively.
 
 Make sure to install Foreman and run `foreman install` first, which will make both Selene and StyLua available for you.
 

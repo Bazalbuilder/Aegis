@@ -15,9 +15,9 @@ return {
 	PermissionLevel = 0, -- Minimum ID required when running from a group's role. Range: 0-255
 	Execute = function(
 		player: Player,
-		arguments: { string }
+		...
 	): () -- The core of the command; what the command will execute when triggered.
 		print("Hello Aegis World!")
-		print(string.format("%s, %s", tostring(player), arguments[1]))
+		print(string.format("%s, %s", tostring(player), ...))
 	end,
 }
