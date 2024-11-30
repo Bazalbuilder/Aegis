@@ -10,7 +10,7 @@ function playerLogger.init()
 	Players.PlayerAdded:Connect(function(player)
 		print("PlayerLogger: Adding" .. player.Name)
 	end)
-	
+
 	Players.PlayerRemoving:Connect(function(player)
 		print("PlayerLogger: Removing" .. player.Name)
 	end)
