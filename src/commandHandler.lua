@@ -23,6 +23,18 @@ local function checkGroupPerms(player: Player): number
 		return 0
 	end
 end
+local function isEscaped(str: string, characterIndex: number): boolean
+	local backslashCount: number = 0
+	for _: number = 1, str:len() do
+		characterIndex -= 1
+		if str:sub(characterIndex, characterIndex) == "\\" then
+			backslashCount += 1
+		else
+			break
+		end
+	end
+	return math.fmod(backslashCount, 2) == 1
+end
 
 local commandHandler = {
 	_initialized = false,
