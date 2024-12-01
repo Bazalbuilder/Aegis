@@ -71,6 +71,7 @@ function commandHandler._initialize()
 				local player = Players:GetPlayerByUserId(textSource.UserId)
 				assert(player ~= nil, string.format("No player with UserId: %d", textSource.UserId))
 
+				-- Check to see if the player has appropriate permissions to run this command
 				local playerPermissionLevel = checkGroupPerms(player)
 				if playerPermissionLevel < commandModule.PermissionLevel then
 					return

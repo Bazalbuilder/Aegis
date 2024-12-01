@@ -1,7 +1,8 @@
 # Aegis Changelog
 
 ## Current master
-* Add support for strings in command handler
+* None at this moment.
 
-## 0.1.0 (TODO: Date)
-* Initial beta release (Bazal, __Nov2024)
+## ALPHA 0.0.1
+* Initial alpha release (Bazal, 01Dec2024)
+* Add support for strings in command handler (#1, ngenqek, 01Dec2024)

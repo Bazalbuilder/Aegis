@@ -1,0 +1,9 @@
+[package]
+name = "bazalbuilder/aegis"
+description = "Moderation and extra tools for Roblox"
+version = "0.0.1"
+license = "MIT"
+authors = ["Bazalbuilder"]
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+repository = "https://github.com/Bazalbuilder/aegis"
