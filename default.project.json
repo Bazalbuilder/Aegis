@@ -8,10 +8,6 @@
             
             "Aegis": {
                 "$path": "src"
-            },
-            
-            "TestEZ": {
-                "$path": "modules/testez"
             }
         },
 
@@ -21,7 +17,7 @@
                 "HttpEnabled": true
             }
         },
-        
+
         "Players": {
             "$className": "Players",
             "$properties": {
