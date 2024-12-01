@@ -72,24 +72,26 @@ function commandHandler._initialize()
 				assert(player ~= nil, string.format("No player with UserId: %d", textSource.UserId))
 
 				local playerPermissionLevel = checkGroupPerms(player)
-				if playerPermissionLevel < commandModule.PermissionLevel then return end
+				if playerPermissionLevel < commandModule.PermissionLevel then
+					return
+				end
 				-- Clean up whitespace in the message so that extra spaces do not cause empty strings in the split
 				local cleanMessage: string = message:gsub("%s+", " ")
 				-- Split up the message into individual words
-				local words: {string} = table.remove(cleanMessage:split(" "), 1) -- The first word is the command, select all words except the first
-				local arguments: {string} = table.create(0)
+				local words: { string } = table.remove(cleanMessage:split(" "), 1) -- The first word is the command, select all words except the first
+				local arguments: { string } = table.create(0)
 				-- Parse words for string arguments
 				local inString: boolean = false
 				for index: number, segment: string in ipairs(words) do
-					local nextQuotation: number = segment:find("\"") or 0
+					local nextQuotation: number = segment:find('"') or 0
 					if nextQuotation == 1 then
 						inString = true
 					elseif nextQuotation ~= 0 and not isEscaped(segment, nextQuotation) then
-						error("Unexpected `\"`")
+						error('Unexpected `"`')
 					end
 
 					repeat
-						nextQuotation = segment:find("\"", nextQuotation + 1)
+						nextQuotation = segment:find('"', nextQuotation + 1)
 					until not nextQuotation or not isEscaped(segment, nextQuotation)
 					if nextQuotation then
 						inString = false
@@ -100,7 +102,7 @@ function commandHandler._initialize()
 						continue
 					end
 
-					local argIsString: boolean = segment:sub(1, 1) == "\"" -- In a string, the first character should always be a quotation mark
+					local argIsString: boolean = segment:sub(1, 1) == '"' -- In a string, the first character should always be a quotation mark
 					if argIsString then
 						segment = segment:sub(2, -1)
 						if nextQuotation == segment:len() + 1 then
@@ -108,7 +110,7 @@ function commandHandler._initialize()
 						else
 							error("Expected space after string argument #" .. #arguments)
 						end
-						segment = segment:gsub("\\\"", "\"")
+						segment = segment:gsub('\\"', '"')
 					end
 
 					table.insert(arguments, segment)
