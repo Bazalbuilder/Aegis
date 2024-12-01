@@ -1,5 +1,5 @@
 --[[ 
-	Used to handle commands in the "src/CommandModules" directory.
+	Used to handle commands in the "src/Commands" directory.
 	
 	To create a new command, follow the instructions in the "template.lua" file.
 ]]
@@ -7,12 +7,22 @@
 local Players = game:GetService("Players")
 local TextChatService = game:GetService("TextChatService")
 
-local CommandModules = script.Parent.CommandModules
+local Commands = script.Parent.Commands
+
+local groupId = 11116305 -- Change this to reflect your own Group.
 
 assert(
 	TextChatService.ChatVersion == Enum.ChatVersion.TextChatService,
 	"TextChatService is not enabled. Aegis.commandHandler will not work."
 )
+
+local function checkGroupPerms(player: Player): number
+	if player.IsInGroup(player, groupId) then
+		return player.GetRankInGroup(player, groupId)
+	else
+		return 0
+	end
+end
 
 local commandHandler = {
 	_initialized = false,
@@ -32,7 +42,7 @@ function commandHandler._initialize()
 	commandFolder.Name = "AegisCommands"
 	commandFolder.Parent = TextChatService
 
-	for _, command in ipairs(CommandModules:GetChildren()) do
+	for _, command in Commands:GetChildren() do
 		if command:IsA("ModuleScript") then
 			local commandModule = require(command)
 			local textChatCommand = Instance.new("TextChatCommand")
@@ -45,13 +55,17 @@ function commandHandler._initialize()
 			textChatCommand.Parent = commandFolder
 
 			textChatCommand.Triggered:Connect(function(textSource, message)
+				-- Find the player object of the speaker
 				local player = Players:GetPlayerByUserId(textSource.UserId)
 				assert(player ~= nil, string.format("No player with UserId: %d", textSource.UserId))
 
-				local playerPermissionLevel = 0 -- Currently 0 until we can figure out how to implement a permission checking system
+				local playerPermissionLevel = checkGroupPerms(player)
 				if playerPermissionLevel >= commandModule.PermissionLevel then
+					-- Clean up whitespace in the message so that extra spaces do not cause empty strings in the split
 					local cleanMessage = string.gsub(message, "%s+", " ")
+					-- Split up the message into individual words
 					local words = string.split(cleanMessage, " ")
+					-- The first word is the command, select all words except the first to pass in as arguments
 					local arguments = table.move(words, 2, #words, 1, {})
 					commandModule.Execute(player, arguments) -- May not work.
 				end

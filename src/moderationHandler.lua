@@ -43,13 +43,13 @@ function playerAction:executeKick(player: Player, message: string)
 	return player:Kick(message or "Kicked by Aegis.")
 end
 
-function playerAction:executeBan(player: Player, permanent: boolean, reason: string?, explanation: string?)
+function playerAction:executeBan(player: Player, permanent: boolean, reason: string?)
 	local duration = getNextBanDuration(player.UserId)
 	local config = {
 		UserIds = { player.UserId },
 		Duration = if permanent then -1 else duration,
-		DisplayReason = reason or "Banned by Aegis.",
-		PrivateReason = explanation or "No reason specified.",
+		DisplayReason = reason or "No reason specified.",
+		PrivateReason = reason or "No reason specified.",
 		ExcludeAltAccounts = false,
 		ApplyToUniverse = true,
 	}

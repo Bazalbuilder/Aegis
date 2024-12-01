@@ -11,7 +11,6 @@ return {
 	PrimaryAlias = "template", -- The primary alias of the command. This will already be formatted with the prefix in commandHandler.
 	SecondaryAlias = "", -- The optional secondary alias of the command.
 	Description = "Prints a statement.", -- The description of the command.
-	Args = {},
 	PermissionLevel = 0, -- Minimum ID required when running from a group's role. Range: 0-255
 	Execute = function(
 		player: Player,
