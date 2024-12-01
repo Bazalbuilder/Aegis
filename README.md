@@ -47,5 +47,4 @@ Remember, don't be afraid to ask a question!
 
 ### TODO List:
 * Add LuaCov and Coveralls (manages coverage of project; higher percentage is good, inverse, not so much)
-* Add package manager (most likely Wally)
 * Add a testing framework (TestEZ? Maybe? I'll probably *test* it out)

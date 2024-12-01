@@ -79,7 +79,9 @@ function commandHandler._initialize()
 				-- Clean up whitespace in the message so that extra spaces do not cause empty strings in the split
 				local cleanMessage: string = message:gsub("%s+", " ")
 				-- Split up the message into individual words
-				local words: { string } = table.remove(cleanMessage:split(" "), 1) -- The first word is the command, select all words except the first
+				local words: { string } = cleanMessage:split(" ")
+				-- Remove the command from the words table
+				table.remove(words, 1) -- The first word is the command, select all words except the first
 				local arguments: { string } = table.create(0)
 				-- Parse words for string arguments
 				local inString: boolean = false
