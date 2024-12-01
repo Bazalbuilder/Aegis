@@ -6,7 +6,8 @@ Only the *release* build of Aegis is officially supported and given security upd
 
 Please keep in mind when submitting a security report:
 
-* We do not offer support for forks of Aegis.
+* We do not offer support for forks of Aegis;
+* Refer to the chart below for supported verisons:
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -21,6 +22,8 @@ If the vulnerability is relatively minor and can be discussed in public, please 
 
 Be sure to include the following in your report:
 * When was the vulnerability first discovered;
+* A description of the vulnerability;
+* The potentially affected versions of Aegis;
 * How the vulnerability may be utilized against experiences.
 
 If the vulnerability report has been accepted, make sure to provide updates about the vulnerability and if it is still present.

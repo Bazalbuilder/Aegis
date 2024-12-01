@@ -1,8 +1,14 @@
+# Coveralls 
+/luacov.*
+
 # Roblox files
 /*.rbxlx
 /*.rbxmx
 /*.rbxl
 /*.rbxm
+
+# For use with selene
+roblox.toml
 
 # Analysis artifacts
 sourcemap.json

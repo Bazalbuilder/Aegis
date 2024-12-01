@@ -4,26 +4,28 @@
         "$className": "DataModel",
 
         "ReplicatedStorage": {
-            "$path": "src"
+            "$className": "ReplicatedStorage",
+            
+            "Aegis": {
+                "$path": "src"
+            },
+            
+            "TestEZ": {
+                "$path": "modules/testez"
+            }
         },
 
-        "Workspace": {
+        "HttpService": {
+            "$className": "HttpService",
             "$properties": {
-                "FilteringEnabled": true
+                "HttpEnabled": true
             }
         },
-        "Lighting": {
+        
+        "Players": {
+            "$className": "Players",
             "$properties": {
-                "Ambient": [0, 0, 0],
-                "Brightness": 2,
-                "GlobalShadows": true,
-                "Outlines": false,
-                "Technology": "Voxel"
-            }
-        },
-        "SoundService": {
-            "$properties": {
-                "RespectFilteringEnabled": true
+                "CharacterAutoLoads": false
             }
         }
     }
