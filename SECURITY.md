@@ -12,7 +12,7 @@ Please keep in mind when submitting a security report:
 | Version | Supported          |
 | ------- | ------------------ |
 | Nightly | No  |
-| 0.1.x   | Yes |
+| 0.0.x   | Yes |
 
 ## Reporting a Vulnerability
 

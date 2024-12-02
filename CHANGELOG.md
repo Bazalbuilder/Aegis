@@ -1,6 +1,6 @@
 # Aegis Changelog
 
-## Current master
+## Nightly release
 * Fixed bug revolving around the command line having incorrect arguments (Bazal, 01Dec2024)
 * Removed mute command, as it is made redundant by Roblox (Bazal, 01Dec2024)
 
