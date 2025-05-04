@@ -1,6 +1,9 @@
 # Aegis (Aegis Security)
 **This repository is in heavy development and is therefore a Work-in-Progress. Not all changes are final.**
 
+> ***THIS REPOSITORY IS ARCHIVED.***
+>
+> I have moved on from Roblox, and I will most likely not be developing on this repository any further.
 
 A scripting library that has many features for anti-cheat and moderation.
 
