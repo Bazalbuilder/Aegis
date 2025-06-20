@@ -1,10 +1,7 @@
-# Aegis (Aegis Security)
+# Aegis
 **This repository is in heavy development and is therefore a Work-in-Progress. Not all changes are final.**
 
-> ***THIS REPOSITORY IS ARCHIVED.***
->
-> I have moved on from Roblox, and I will most likely not be developing on this repository any further.
-
+> *** REPOSITORY IS BACK UP! *** 
 A scripting library that has many features for anti-cheat and moderation.
 
 ## Features
@@ -35,10 +32,10 @@ Any forks of this repository should also be licensed under MIT.
 Contributions are welcome! Take a look at the [contribution guide](CONTRIBUTING.md) for guidelines on how to contribute to Aegis.
 
 ## Questions
-Any questions should be posted on the [Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues) or my [Discord server](https://discord.gg/asCWGUfJMj). 
+Any questions should be posted on the [Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues).
 
 Remember, don't be afraid to ask a question!
 
 ### TODO List:
 * Add LuaCov and Coveralls (manages coverage of project; higher percentage is good, inverse, not so much)
-* Add a testing framework (TestEZ? Maybe? I'll probably *test* it out)
+* Add a testing framework

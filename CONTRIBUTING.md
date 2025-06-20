@@ -1,5 +1,5 @@
 # Aegis Contribution Guide
-Thanks for considering contributing Aegis! This document will help you get started with contributing to the Aegis project.
+Thanks for contributing to Aegis! This document will help you get started with contributing to the Aegis project.
 
 ## Bug Reports
 Any bugs (or things that look like bugs) should be reported to the [GitHub Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues).
@@ -13,7 +13,7 @@ Please include as much information as possible, including:
 When posting an issue, make sure to double-check that it hasn't already been reported. If one's already posted, don't worry! If we notice a duplicate issue, we'll send you the link to the original issue.
 
 ## Feature Requests
-Any feature requests or feedback that you think would make a difference should be posted to the [GitHub Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues) or our [[Discord server](https://discord.gg/asCWGUfJMj).
+Any feature requests or feedback that you think would make a difference should be posted to the [GitHub Issue Tracker](https://github.com/Bazalbuilder/Aegis/issues).
 
 Please include as much information as possible, including:
 * A clear description of the feature you're requesting;
@@ -24,9 +24,7 @@ Like bug reports, please double-check that the feature you're requesting hasn't 
 
 ## Working on Aegis
 To get started working on Aegis, you'll need the following programs installed on your device:
-* [Lua 5.1](https://www.lua.org/ftp/)
-* [LuaCov](https://keplerproject.github.io/luacov) `luarocks install luacov` (support being added soon)
-* [Foreman](https://github.com/Roblox/foreman) ([installation instructions](https://github.com/Roblox/foreman#installation))
+* Roblox Studio
 * [Selene](https://github.com/kampfkarren/selene) (install via foreman; `foreman install` or download latest release)
 * [StyLua](https://github.com/JohnnyMorganz/StyLua) (install only once via foreman; `foreman install` or downlaod latest release)
 
@@ -62,4 +60,6 @@ All notable changes to Aegis should be documented in the [CHANGELOG.md](https://
 Add a line under the "Nightly Release" heading. When we make a new release, all of the bullet points under "Nightly Release" will be attached to a new version.
 
 ### Testing
-TO BE IMPELEMENTED SOON.
+Aegis uses Lunit, an easy-to-use tester for Roblox projects.
+
+To create a new test, follow the instructions at the 
