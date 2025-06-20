@@ -6,4 +6,7 @@ license = "MIT"
 authors = ["Bazalbuilder"]
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
-repository = "https://github.com/Bazalbuilder/aegis"
+repository = "https://github.com/Bazalbuilder/Aegis"
+
+[dev-dependencies]
+Lunit = "bazalbuilder/lunit@0.1.0-alpha"

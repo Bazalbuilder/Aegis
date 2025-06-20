@@ -6,12 +6,17 @@
 /*.rbxmx
 /*.rbxl
 /*.rbxm
+/*.lock
 
 # Selene
-roblox.toml
+roblox.yml
 
 # Analysis artifacts
-sourcemap.json
+/sourcemap.json
 
 # OS / Editor files
 .vscode
+
+# Wally
+/Packages
+/DevPackages

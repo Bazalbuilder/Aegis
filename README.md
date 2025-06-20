@@ -1,7 +1,8 @@
 # Aegis
 **This repository is in heavy development and is therefore a Work-in-Progress. Not all changes are final.**
 
-> *** REPOSITORY IS BACK UP! *** 
+*** (UPD: 6/20/2025) Repository is back up! *** 
+
 A scripting library that has many features for anti-cheat and moderation.
 
 ## Features
